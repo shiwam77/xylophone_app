@@ -9,36 +9,7 @@ void main() {
 class Xylophone extends StatelessWidget {
   void playSound(int i) {
     final player = AudioCache();
-    // call this method when desired
-    player.play('explosion.mp3');
-    if (i == 1) {
-      player.play('note1.wav');
-      return;
-    }
-    if (i == 2) {
-      player.play('note2.wav');
-      return;
-    }
-    if (i == 3) {
-      player.play('note3.wav');
-      return;
-    }
-    if (i == 4) {
-      player.play('note4.wav');
-      return;
-    }
-    if (i == 5) {
-      player.play('note5.wav');
-      return;
-    }
-    if (i == 6) {
-      player.play('note6.wav');
-      return;
-    }
-    if (i == 7) {
-      player.play('note7.wav');
-      return;
-    }
+    player.play('note$i.wav');
   }
 
   Expanded buildExpand(Color color, int i) {
