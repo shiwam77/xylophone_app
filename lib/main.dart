@@ -9,7 +9,7 @@ void main() {
 class Xylophone extends StatelessWidget {
   void playSound(int i) {
     final player = AudioCache();
-    player.play('note$i.wav');
+    player.play('note$i.wav');//Here's the changes i made
   }
 
   Expanded buildExpand(Color color, int i) {
